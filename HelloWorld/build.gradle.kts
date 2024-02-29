@@ -50,7 +50,7 @@ publishing {
             artifactId = "library"
             version = "1.1"
 
-            from(components["java"])
+            afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
         }
     }
 }
