@@ -43,6 +43,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
+//MAVEN Publication
 publishing {
     publications {
         create<MavenPublication>("maven") {
